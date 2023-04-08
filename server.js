@@ -1,7 +1,7 @@
 const app = require('./app.js');
-
+const cors = require('cors');
 const mongoose = require('mongoose');
-
+app.use(cors());
 main().catch(err => console.log(err));
 
 async function main() {
